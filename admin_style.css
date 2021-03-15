@@ -1,0 +1,27 @@
+body>div{
+    display: grid;
+    grid-template-columns: 33% 33% 30%;
+    justify-self: center;
+}
+
+.form{
+    display: grid;
+    justify-self: center;
+}
+
+p, h1{
+    width: 90%;
+    text-align: center;
+}
+
+input, textarea, button{
+    width: 90%;
+    justify-self: center;
+}
+textarea{
+    height: 100px;
+}
+
+a{
+font-size: 24px;
+}

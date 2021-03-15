@@ -1,0 +1,384 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-image: url(./img/background.jpg);
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 0fr 1fr auto;
+}
+
+header{
+    position: relative; 
+    width: 100%;
+    height: 55px;
+    background-image: url(./img/header.jpg);
+    display: grid; 
+    grid-template-columns: 7% 20% 15% 15% 20% 15% 8%;
+    justify-content: center;
+}
+
+header>div{
+    font-size: 30px;
+}
+
+#home, #inf, #menu, #contacts, #entrance{
+    align-self: center;
+}
+
+#home,#inf, #logo{
+    justify-self: left;
+}
+
+#menu, #entrance{
+    justify-self: center;
+}
+
+#contacts,  #log{
+    justify-self: right;
+}
+
+header>div>a{
+    text-decoration: none;
+    color: rgb(240, 230, 140);
+}
+
+header>div>a:hover{
+    color:rgb(255, 255, 224);
+}
+
+header>div>a:active{
+    color:rgb(189, 183, 107);
+}
+
+.table{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 2%;
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 90%;
+    grid-template-rows: 15% 85%;
+    justify-content: space-evenly;
+}
+
+.top_head{
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 70%;
+}
+
+.exit{
+    font-size: 28px;
+}
+
+.exit>a{
+    text-decoration: none;
+    color: rgb(33,147,90);
+}
+
+.exit>a:hover{
+    color: rgb(64,199,129);
+}
+
+.exit>a:active{
+    color: rgb(33,147,90);
+}
+
+.name{
+    font-size: 32px;
+    justify-self: center;
+}
+
+#text1{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 40% 60% ;
+    height: 100%;
+}
+
+.photo{
+    align-self: center;
+    height: 100%;
+}
+
+.img{
+    width: 90%;
+    border: black 10px double;
+}
+
+#text2{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 70% 30%;
+}
+
+.ingredients{
+    font-size: 24px;
+    padding-left: 20%;
+}
+
+#text3{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 20% 80%;
+    font-size: 20px;
+}
+
+.text4{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 50% 50%;
+    align-self: end;
+    font-size: 20px;
+}
+
+.weight, .money{
+    align-self: end;
+}
+
+.money{
+    text-align: end;
+}
+
+.text5{
+    justify-self: center;
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 30% 30% 30%;
+}
+
+.basket{
+    align-self: end;
+    justify-self: center;
+}
+
+.button1 {
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    font-size: 16px;
+    border: rgb(53,167,110);
+   
+} 
+
+.button1:hover,.plus:hover,.minus:hover { 
+    background: rgb(53, 167, 110); 
+}
+
+.button1:active,.plus:active,.minus:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+
+
+footer{
+    height: 100%;
+    position: relative;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-top: 5%;
+    width: 100%;
+    background-color:rgb(255,209,108);
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 20% 20% 20% 20%;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.logo{
+    align-self: center;
+    display: inline-flex;
+}
+
+.logo>img{
+    width: 50px;
+    opacity: 0.8;
+}
+
+.logo>a{
+    display: inline-flex;
+}
+
+.logo>a:hover img{
+  opacity: 1;
+  width: 53px;
+}
+
+.logo>a:active img{
+    opacity: 0.8;
+    width: 50px;
+}
+
+.logo>a>img{
+    width: 50px;
+    opacity: 0.8;
+}
+
+#facebook, #gmail, #twitter, #instagram{
+    justify-self: center;
+}
+
+
+/*планшети*/
+@media screen and (min-device-width: 481px) and (max-device-width: 1250px){
+    .table{
+        grid-template-columns: 95%;
+        grid-template-rows: 10% 50% 40%;
+    }
+
+    #text1{
+        grid-template-columns: 50% 50%;
+       
+    }
+
+    #text2{
+        grid-template-columns: 100%;
+    }
+
+    #text3{
+        grid-template-columns: 100%;
+        min-width: 100%;
+    }
+
+    .ingredients{
+        font-size: 32px;
+    }
+
+    .weight, .money{
+        text-align: center;
+    }
+
+    .weight, .money, .basket, .counter{
+        align-self: start;
+    }
+
+    .text4{
+        font-size: 28px;
+    }
+
+    .text5{
+        padding-top: 5%;
+        grid-template-rows: 100%;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+    }
+    
+    .button1{
+        font-size: 22px;
+
+    }
+
+    .counter{
+        font-size: 32px;
+    }
+
+}
+
+/*телефоны*/
+@media screen and (max-device-width: 480px){
+    .table{
+        min-height: 1300px;
+        max-height: 1500px;
+        grid-template-rows: 6% 80% 14%;
+        grid-template-columns: 95%;
+    }
+    
+    .top_head{
+        grid-template-columns: 20% 80%;
+    }
+
+    .name{
+        font-size: 36px;
+        justify-self: center;
+    }    
+
+    #text1{
+        grid-template-columns: 100%;
+        justify-self: center;
+        grid-template-rows: 50% 50%;
+    }
+
+    .photo{
+        padding-left: 2%;
+        width: 98%;
+        justify-content: center;
+    }
+
+    .img{
+        width: 95%;
+        height: 90%;
+    }
+
+    #text2{
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        min-height: 500px;
+        max-height: 2000px;
+        
+    }
+
+    .ingredients{
+        font-size: 32px;
+        justify-self: center;
+    }
+    
+    #text3{
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+    }
+
+    .text4{
+        font-size: 28px;
+    }
+
+    .text5{
+
+        grid-template-rows: 100%;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+    }
+    
+    .weight, .money{
+        text-align: center;
+    }
+
+    .basket{
+        width: 90%;
+    }
+
+    .button1{
+        width: 100%;
+        height: 75px;
+    }
+}
+
+

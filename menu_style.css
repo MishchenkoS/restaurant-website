@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-image: url(./img/background.jpg);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 0fr  1fr auto;
+}
+
+header{
+    position: relative; 
+    width: 100%;
+    height: 55px;
+    background-image: url(./img/header.jpg);
+    display: grid; 
+    grid-template-columns: 7% 20% 15% 15% 20% 15% 8%;
+    justify-content: center;
+}
+
+header>div{
+    font-size: 30px;
+}
+
+#home, #inf, #menu, #contacts, #entrance{
+    align-self: center;
+}
+
+#home,#inf, #logo{
+    justify-self: left;
+}
+
+#menu, #entrance{
+    justify-self: center;
+}
+
+#contacts,  #log{
+    justify-self: right;
+}
+
+header>div>a{
+    text-decoration: none;
+    color: rgb(240, 230, 140);
+}
+
+header>div>a:hover{
+    color:rgb(255, 255, 224);
+}
+
+header>div>a:active{
+    color:rgb(189, 183, 107);
+}
+
+
+.exit{
+    margin-top: 10px;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 15% 35% 35% 15%;
+}
+
+.exit>a{
+    text-decoration: none;
+    color: rgb(33,147,90);
+    padding-left: 35px;
+}
+
+
+
+.exit>a:hover{
+    color: rgb(64,199,129);
+}
+
+.exit>a:active{
+    color: rgb(33,147,90);
+}
+
+
+.exit>div{
+    display: grid;
+}
+
+
+.func{
+    display: grid;
+    margin-top: 1%;
+    grid-template-columns: 100% ;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-left: 50%;
+}
+
+.select{
+    width: 65%;
+    height: 25px;
+    border-radius: 3px;
+    box-shadow: 0 -3px rgb(180, 162, 162) inset;
+}
+
+.button_1{
+    margin-left: 50px;
+}
+
+.input{
+    width: 25%;
+    height: 25px;
+}
+
+.form{
+    
+    margin-right: 50px;
+}
+
+
+.table{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-top: 2%;
+    position: relative;
+    display: grid;
+    align-content: space-around;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+}
+
+
+.str,.str1{
+    margin-top: 5%;
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    border: 5px double black;
+    background: url(./img/menu_fon.jpg);
+}
+
+.str1{
+    grid-template-rows: 75% 25%;
+}
+
+
+.text{
+    position: relative;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 100%;
+    justify-content: space-evenly;
+
+}
+
+.number{
+    background-color: rgb(64,199,129);
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    z-index: 100;
+	top: 5px;
+	left: 5px;
+    display: inline-block;
+    
+}
+
+.plus,.minus, .delete{
+    width: 10%;
+    font-size: 32px;
+    position: absolute;
+    z-index: 100;
+	top: 5px;
+	left: 300px;
+	display: inline-block;
+}
+
+.minus{
+    left: 350px;
+}
+
+.delete{
+    width: 50%;
+    top: 200px;
+    left: 5px;
+    font-size: 16px;
+}
+
+.img{
+    display: grid;
+    width: 100%;
+}
+
+.photo{
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 250px;
+}
+
+.name, .money{
+    font-size: 30px;
+
+}
+
+.a{
+    display: grid;
+    text-decoration: none;
+}
+
+
+.money{
+    justify-self: right;
+}
+
+.button1, .button{
+    width: 60%;
+}
+
+
+.button, .button1, .plus,.minus, .delete{
+    justify-self: center;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    font-size: 14px;
+    border: rgb(53,167,110);
+} 
+
+.button:hover, .button1:hover, .plus:hover,.minus:hover, .delete:hover{ 
+    background: rgb(53, 167, 110); 
+}
+
+.button:active, .button1:active, .plus:active,.minus:active, .delete:active{
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.button1 {
+    justify-items: center;
+}
+
+.sorry{
+    height: 400px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.login{
+    display: grid;
+    grid-template-columns: 60%;
+    justify-content: center;
+}
+
+
+.footer1{
+    height: 25%;
+    position: absolute;
+    top: 100%;
+}
+
+
+footer{
+    height: 100%;
+    margin-top: 5%;
+    position: relative;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 100%;
+    background-color:rgb(255,209,108);
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 20% 20% 20% 20%;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.logo{
+    align-self: center;
+    display: inline-flex;
+}
+
+.logo>img{
+    width: 50px;
+    opacity: 0.8;
+}
+
+.logo>a{
+    display: inline-flex;
+}
+
+.logo>a:hover img{
+  opacity: 1;
+  width: 53px;
+}
+
+.logo>a:active img{
+    opacity: 0.8;
+    width: 50px;
+}
+
+.logo>a>img{
+    width: 50px;
+    opacity: 0.8;
+}
+
+#facebook, #gmail, #twitter, #instagram{
+    justify-self: center;
+}
+
+
+
+/*планшети*/
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px){
+    .table{
+        grid-template-columns: 45% 45%;
+    }
+    
+    .footer1{
+        height: 15%;
+    }
+}
+
+
+/*телефоны*/
+@media screen and (max-device-width: 480px) {
+    .footer1{
+        height: 10%;
+    }
+
+    .table{
+        grid-template-columns: 90%;
+        
+    }
+
+    .str{
+        height: 500px;
+    }
+
+    .img{
+       width: 100%;
+       justify-content: center;
+    }
+
+
+    .photo{
+        height: 400px;
+        width: 800px;
+        
+    }
+
+    .button1{
+        font-size: 24px;
+        width: 80%;
+    }
+
+    .plus,.minus, .delete{
+        width: 10%;
+        font-size: 32px;
+        position: absolute;
+        z-index: 100;
+        top: 5px;
+        left: 750px;
+        display: inline-block;
+    }
+    
+    .minus{
+        left: 600px;
+    }
+    
+    .delete{
+        width: 50%;
+        top: 300px;
+        left: 50px;
+        font-size: 24px;
+    }
+
+    .number{
+        left: 50px;
+    }
+}
+
+
+

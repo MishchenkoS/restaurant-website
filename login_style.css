@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-image: url(./img/background.jpg);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 0fr 0fr 1fr auto ;
+}
+
+header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+    width: 100%;
+    height: 55px;
+    background-image: url(./img/header.jpg);
+    display: grid; 
+    grid-template-columns: 7% 20% 15% 15% 20% 15% 8%;
+    justify-content: center;
+}
+
+header>div{
+    font-size: 30px;
+}
+
+#home, #inf, #menu, #contacts, #entrance{
+    align-self: center;
+}
+
+#home,#inf, #logo{
+    justify-self: left;
+}
+
+#menu, #entrance{
+    justify-self: center;
+}
+
+#contacts,  #log{
+    justify-self: right;
+}
+
+header>div>a{
+    text-decoration: none;
+    color: rgb(240, 230, 140);
+}
+
+header>div>a:hover{
+    color:rgb(255, 255, 224);
+}
+
+header>div>a:active{
+    color:rgb(189, 183, 107);
+}
+
+.exit{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 90%;
+    margin-left: 2%;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(33,147,90);
+}
+
+.exit:hover{
+    color: rgb(64,199,129);
+}
+
+
+
+.vse{
+    position: relative;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+}
+
+.reg, .auth{
+    justify-self: center;
+    width: 70%;
+}
+
+
+
+p, h1{
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(64,199,129);
+    border-radius: 4px;
+    text-align: center;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid rgb(53,167,110);
+}
+
+.password {
+	position: relative;
+}
+
+.password-control {
+	position: absolute;
+	top: 23px;
+	right: 6px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(./img/eye1.png) 0 0 no-repeat;
+}
+
+.password-control.view {
+    top: 20px;
+	background: url(./img/noeye1.png) 0 0 no-repeat;
+}
+
+
+.button{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    font-size: 12px;
+    border: rgb(53,167,110);
+} 
+
+.button:hover{ 
+    background: rgb(53, 167, 110); 
+}
+
+.button:active{
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+footer{
+    height: 100%;
+    position: relative;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-top: 5%;
+    width: 100%;
+    background-color:rgb(255,209,108);
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 20% 20% 20% 20%;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.logo{
+    align-self: center;
+    display: inline-flex;
+}
+
+.logo>img{
+    width: 50px;
+    opacity: 0.8;
+}
+
+.logo>a{
+    display: inline-flex;
+}
+
+.logo>a:hover img{
+  opacity: 1;
+  width: 53px;
+}
+
+.logo>a:active img{
+    opacity: 0.8;
+    width: 50px;
+}
+
+.logo>a>img{
+    width: 50px;
+    opacity: 0.8;
+}
+
+#facebook, #gmail, #twitter, #instagram{
+    justify-self: center;
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1250px){
+    body{
+        grid-template-rows: 0fr 0fr 20fr auto ;
+    }
+}
+
+@media screen and (max-device-width: 480px){
+    .vse{
+        grid-template-columns: 90%;
+        height: 100%;
+    }
+
+    .auth, .reg{
+        width: 80%;
+    }
+
+    body{
+        grid-template-rows: 0fr 0fr 35fr auto ;
+    }
+}
+
